@@ -1,7 +1,7 @@
 pipeline {
       tools {
 
-       maven "M2_HOME"
+       maven "MAVEN_LOCAL"
 
     }
     agent any
