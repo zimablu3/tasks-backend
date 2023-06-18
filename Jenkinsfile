@@ -52,6 +52,3 @@ pipeline {
         }
     }
 }
-
-
-https://github.com/zimablu3/tasks-frontend
