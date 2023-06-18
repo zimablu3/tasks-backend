@@ -63,6 +63,15 @@ pipeline {
                 }
             }
         }
+
+         stage ('Functional Test'){
+            steps{
+                dir('functional-test') {
+                    git 'https://github.com/zimablu3/tasks-functional-tests'
+                    sh 'mvn test'
+                }
+            }
+        }
     }
 }
 
