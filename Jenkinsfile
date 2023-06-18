@@ -47,8 +47,10 @@ pipeline {
 
         stage ('API Test'){
             steps{
-                git 'https://github.com/zimablu3/tasks-api-test'
-                sh 'mvn test'
+                dir('api-test') {
+                    git 'https://github.com/zimablu3/tasks-api-test'
+                    sh 'mvn test'
+                }
             }
         }
     }
